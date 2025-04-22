@@ -30,7 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can then start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-You can modify the `metadata` in `app/layout.tsx` to change the title, description, and your github repo link.
+You can modify the `metadata` in `src/config/metadata.ts` to change the title and description of the site. you can also modify the github link of your project in `other` section.
 
 ## Optimized Fonts
 

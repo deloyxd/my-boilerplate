@@ -1,18 +1,17 @@
 import Header from "@/components/header";
 import { siteMetadata, getMetadataTitle } from "@/config/metadata";
-import Link from "next/link";
 
 export const metadata = siteMetadata;
 
-export default function Page() {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <>
       <Header title={getMetadataTitle()} />
-      <div>
-        Home
-        <Link href="/login">Login</Link>
-        <Link href="/signup">Sign up</Link>
-      </div>
+      {children}
     </>
   );
 }

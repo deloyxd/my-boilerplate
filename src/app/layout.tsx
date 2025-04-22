@@ -1,27 +1,15 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { geistSans, geistMono } from "@/config/font";
 import "./globals.css";
-import Container from "../components/container";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Container from "@/components/container";
+import Footer from "@/components/footer";
+import {
+  siteMetadata,
+  getMetadataTitle,
+  getMetadataDescription,
+  getMetadataGithub,
+} from "@/config/metadata";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "MyApplication",
-  description: "MyApplication description",
-  other: {
-    github: "deloyxd",
-  },
-};
+export const metadata = siteMetadata;
 
 export default function RootLayout({
   children,
@@ -34,12 +22,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-gray-200 antialiased`}
       >
         <Container>
-          <Header title={metadata.title?.toString() || ""} />
           {children}
           <Footer
-            title={metadata.title?.toString() || ""}
-            description={metadata.description?.toString() || ""}
-            github={metadata.other?.github?.toString() || ""}
+            title={getMetadataTitle()}
+            description={getMetadataDescription()}
+            github={getMetadataGithub()}
           />
         </Container>
       </body>
