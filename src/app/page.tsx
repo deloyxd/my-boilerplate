@@ -1,13 +1,10 @@
 import Header from "@/components/header";
-import { siteMetadata, getMetadataTitle } from "@/config/metadata";
 import Link from "next/link";
-
-export const metadata = siteMetadata;
 
 export default function Page() {
   return (
     <>
-      <Header title={getMetadataTitle()} />
+      <Header />
       <div>
         Home
         <Link href="/login">Login</Link>

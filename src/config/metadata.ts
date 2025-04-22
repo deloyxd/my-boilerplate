@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const siteMetadata: Metadata = {
+const siteMetadata: Metadata = {
   title: "MyApplication",
   description: "MyApplication description",
   other: {

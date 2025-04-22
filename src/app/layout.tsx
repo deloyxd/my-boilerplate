@@ -2,14 +2,6 @@ import { geistSans, geistMono } from "@/config/font";
 import "./globals.css";
 import Container from "@/components/container";
 import Footer from "@/components/footer";
-import {
-  siteMetadata,
-  getMetadataTitle,
-  getMetadataDescription,
-  getMetadataGithub,
-} from "@/config/metadata";
-
-export const metadata = siteMetadata;
 
 export default function RootLayout({
   children,
@@ -23,11 +15,7 @@ export default function RootLayout({
       >
         <Container>
           {children}
-          <Footer
-            title={getMetadataTitle()}
-            description={getMetadataDescription()}
-            github={getMetadataGithub()}
-          />
+          <Footer />
         </Container>
       </body>
     </html>

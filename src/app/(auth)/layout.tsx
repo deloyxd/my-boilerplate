@@ -1,7 +1,4 @@
 import Header from "@/components/header";
-import { siteMetadata, getMetadataTitle } from "@/config/metadata";
-
-export const metadata = siteMetadata;
 
 export default function RootLayout({
   children,
@@ -10,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <Header title={getMetadataTitle()} />
+      <Header />
       {children}
     </>
   );
