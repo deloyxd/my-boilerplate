@@ -4,7 +4,7 @@ interface HeaderProps {
 
 export default function Header({ title }: HeaderProps) {
   return (
-    <header className="bg-white border-1 border-gray-100 mx-auto text-black">
+    <header className="mx-auto border-1 border-gray-100 bg-white text-black">
       <div className="p-6">
         <a className="text-2xl font-bold hover:text-gray-600" href="/">
           {title}
