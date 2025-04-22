@@ -1,14 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) boilerplate project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-First, clone this repo:
+First, create or go inside the folder you want it to be cloned.
 
 ```bash
-git clone https://github.com/deloyxd/my-boilerplate.git
+cd you-new-project
 ```
 
-Then install node modules:
+Then, clone this repo without its Git history:
+
+```bash
+npx degit https://github.com/deloyxd/my-boilerplate.git .
+```
+
+Finally, install node modules:
 
 ```bash
 npm install
