@@ -11,7 +11,7 @@ cd you-new-project
 Then, clone this repo without its Git history:
 
 ```bash
-npx degit https://github.com/deloyxd/my-boilerplate.git .
+npx degit deloyxd/my-boilerplate .
 ```
 
 Finally, install node modules:
